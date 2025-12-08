@@ -1,6 +1,9 @@
-**Automated Research Report Generation**
+# Automated Research Report Generation
 
-- **Purpose:**: Generate structured research reports using configurable prompts and automated workflows. The project creates reproducible, exportable reports into `generated_report/` and includes a web UI for monitoring/report generation.
+- **Purpose:**: Generate structured research reports using configurable prompts and automated workflows. The project creates reproducible, exportable reports into `generated_report/` and includes a web UI for monitoring/report generation.Langgraph Workflow is as shown below:
+
+  <img width="663" height="1218" alt="image" src="https://github.com/user-attachments/assets/69699ee5-86ea-4bff-8637-c72b109029d2" />
+
 
 **Quick Workflow**
 
