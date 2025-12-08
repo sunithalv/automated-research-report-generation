@@ -1,4 +1,4 @@
-**Automated Research Report Generation**
+# Automated Research Report Generation
 
 - **Purpose:**: Generate structured research reports using configurable prompts and automated workflows. The project creates reproducible, exportable reports into `generated_report/` and includes a web UI for monitoring/report generation.
 
