@@ -8,9 +8,9 @@ set -e
 # Configuration
 RESOURCE_GROUP="research-report-jenkins-rg"
 LOCATION="eastus"
-STORAGE_ACCOUNT="reportjenkinsstore25"
+STORAGE_ACCOUNT="reportjenkinsstore26"
 FILE_SHARE="jenkins-data"
-ACR_NAME="reportjenkinsacr25"
+ACR_NAME="reportjenkinsacr26"
 CONTAINER_NAME="jenkins-research-report"
 DNS_NAME_LABEL="jenkins-research-$(date +%s | tail -c 6)"
 JENKINS_IMAGE_NAME="custom-jenkins"
@@ -150,7 +150,7 @@ az container create \
   --image ${ACR_NAME}.azurecr.io/${JENKINS_IMAGE_NAME}:${JENKINS_IMAGE_TAG} \
   --registry-login-server ${ACR_NAME}.azurecr.io \
   --registry-username $ACR_USERNAME \
-  --registry-password $ACR_PASSWORD \
+  --registry-password "$(printf '%s' "$ACR_PASSWORD")" \
   --os-type Linux \
   --dns-name-label $DNS_NAME_LABEL \
   --ports 8080 \
