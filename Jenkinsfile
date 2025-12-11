@@ -46,7 +46,7 @@ pipeline {
                     checkout([
                         $class: 'GitSCM',
                         branches: [[name: '*/main']],
-                        userRemoteConfigs: [[url: 'https://github.com/sunnysavita10/automated-research-report-generation.git']]
+                        userRemoteConfigs: [[url: 'https://github.com/sunithalv/automated-research-report-generation.git']]
                     ])
                 }
             }
